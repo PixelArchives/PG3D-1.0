@@ -15,6 +15,7 @@ public static class NewInput
 		}
 		set
 		{
+			Cursor.visible = !value;
 			Cursor.lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
 		}
 	}
