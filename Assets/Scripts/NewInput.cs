@@ -114,7 +114,7 @@ public static class NewInput
 			if (movement != Vector3.zero) isMobile = false;
 		}
 
-		if (old != isMobile) onInputChange.Invoke();
+		if (old != isMobile && onInputChange != null) onInputChange.Invoke();
 	}
 }
 
